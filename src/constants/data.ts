@@ -13,52 +13,78 @@ export type Product = {
 
 //Info: The following data is used for the sidebar navigation and Cmd K bar.
 export const navItems: NavItem[] = [
+  // {
+  //   title: 'Dashboard',
+  //   url: '/dashboard/overview',
+  //   icon: 'dashboard',
+  //   isActive: false,
+  //   shortcut: ['d', 'd'],
+  //   items: [] // Empty array as there are no child items for Dashboard
+  // },
+  // {
+  //   title: 'Product',
+  //   url: '/dashboard/product',
+  //   icon: 'product',
+  //   shortcut: ['p', 'p'],
+  //   isActive: false,
+  //   items: [] // No child items
+  // },
   {
     title: 'Dashboard',
-    url: '/dashboard/overview',
+    url: '/dashboard/feed', // Placeholder as there is no direct link for the parent
     icon: 'dashboard',
-    isActive: false,
-    shortcut: ['d', 'd'],
-    items: [] // Empty array as there are no child items for Dashboard
+    isActive: true,
+    shortcut: ['d', 'f'],
+    items: []
   },
   {
-    title: 'Product',
-    url: '/dashboard/product',
-    icon: 'product',
-    shortcut: ['p', 'p'],
-    isActive: false,
-    items: [] // No child items
-  },
-  {
-    title: 'Account',
-    url: '#', // Placeholder as there is no direct link for the parent
-    icon: 'billing',
+    title: 'Tracked Accounts',
+    url: '/dashboard/accounts', // Placeholder as there is no direct link for the parent
+    icon: 'accounts',
     isActive: true,
 
     items: [
-      {
-        title: 'Profile',
-        url: '/dashboard/profile',
-        icon: 'userPen',
-        shortcut: ['m', 'm']
-      },
-      {
-        title: 'Login',
-        shortcut: ['l', 'l'],
-        url: '/',
-        icon: 'login'
-      }
+      // {
+      //   title: 'Profile',
+      //   url: '/dashboard/profile',
+      //   icon: 'userPen',
+      //   shortcut: ['m', 'm']
+      // },
+      // {
+      //   title: 'Login',
+      //   shortcut: ['l', 'l'],
+      //   url: '/',
+      //   icon: 'login'
+      // }
     ]
   },
   {
-    title: 'Kanban',
-    url: '/dashboard/kanban',
-    icon: 'kanban',
-    shortcut: ['k', 'k'],
-    isActive: false,
-    items: [] // No child items
+    title: 'Reports',
+    url: '/dashboard/reports', // Placeholder as there is no direct link for the parent
+    icon: 'reports',
+    isActive: true,
+    shortcut: ['r', 'r'],
+    items: []
+  },
+  {
+    title: 'Integrations',
+    url: '/dashboard/integrations', // Placeholder as there is no direct link for the parent
+    icon: 'integrations',
+    isActive: true,
+    shortcut: ['i', 'i'],
+    items: []
   }
+  // {
+  //   title: 'Kanban',
+  //   url: '/dashboard/kanban',
+  //   icon: 'kanban',
+  //   shortcut: ['k', 'k'],
+  //   isActive: false,
+  //   items: [] // No child items
+  // }
 ];
+
+export const APP_NAME = 'ANAPAN AI';
 
 export interface SaleUser {
   id: number;

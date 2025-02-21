@@ -33,3 +33,31 @@ export interface FooterItem {
 export type MainNavItem = NavItemWithOptionalChildren;
 
 export type SidebarNavItem = NavItemWithChildren;
+
+export interface Employee {
+  id: string;
+  title: string;
+  node: {
+    position: {
+      id: number;
+      fullName: string;
+      role: string;
+      profileImage?: {
+        endpoint: string;
+        uri: string;
+        ext: string;
+      } | null;
+    };
+  };
+  parentId: string | null;
+  section: 'board' | 'orgChart';
+  type: 'leaf' | string;
+  order: number;
+}
+
+export interface EmployeeCardProps {
+  employee: Employee;
+  isExpanded?: boolean;
+  onToggle?: () => void;
+  reportCount?: number;
+}

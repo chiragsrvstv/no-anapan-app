@@ -29,7 +29,7 @@ export default function UserAuthForm() {
   const callbackUrl = searchParams.get('callbackUrl');
   const [loading, startTransition] = useTransition();
   const defaultValues = {
-    email: 'demo@gmail.com'
+    email: 'demo@anapanai.com'
   };
   const form = useForm<UserFormValue>({
     resolver: zodResolver(formSchema),
@@ -77,7 +77,7 @@ export default function UserAuthForm() {
           </Button>
         </form>
       </Form>
-      <div className='relative'>
+      {/* <div className='relative'>
         <div className='absolute inset-0 flex items-center'>
           <span className='w-full border-t' />
         </div>
@@ -87,7 +87,7 @@ export default function UserAuthForm() {
           </span>
         </div>
       </div>
-      <GithubSignInButton />
+      <GithubSignInButton /> */}
     </>
   );
 }

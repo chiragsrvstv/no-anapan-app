@@ -5,7 +5,7 @@ import { Breadcrumbs } from '../breadcrumbs';
 import SearchInput from '../search-input';
 import { UserNav } from './user-nav';
 import ThemeToggle from './ThemeToggle/theme-toggle';
-
+import { APP_NAME } from '@/constants/data';
 export default function Header() {
   return (
     <header className='flex h-16 shrink-0 items-center justify-between gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12'>
@@ -14,6 +14,10 @@ export default function Header() {
         <Separator orientation='vertical' className='mr-2 h-4' />
         <Breadcrumbs />
       </div>
+
+      {/* <div className='hidden text-xl font-thin md:block'>
+        {APP_NAME}
+      </div> */}
 
       <div className='flex items-center gap-2 px-4'>
         <div className='hidden md:flex'>
