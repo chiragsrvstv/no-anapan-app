@@ -11,7 +11,6 @@ import {
   AlertDialogHeader,
   AlertDialogTitle
 } from '@/components/ui/alert-dialog';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   Target,
   TrendingUp,
@@ -20,7 +19,6 @@ import {
 } from 'lucide-react';
 
 import React from 'react';
-import { MarkdownRenderer } from './MarkdownRenderer';
 import Markdown from 'react-markdown';
 
 const priorityIcons = {
@@ -30,7 +28,17 @@ const priorityIcons = {
   'Financial Summary': ChartNoAxesCombined
 };
 
-export function AccountSum(props: any) {
+type AccountSumProps = {
+  title: keyof typeof priorityIcons;
+  accountSummary: {
+    offeringsShort: string;
+    offeringsFull: string;
+    name: string;
+    accountURL: string;
+  };
+};
+
+export function AccountSum(props: AccountSumProps) {
   const [open, setOpen] = React.useState(false);
   const Icon = priorityIcons[props.title];
   // console.log('accountSummary', accountSummary.accountSummary.logoURL);

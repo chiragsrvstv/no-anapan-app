@@ -9,7 +9,6 @@ import {
   CardTitle
 } from '@/components/ui/card';
 import React from 'react';
-import { overallIntelligence } from '@/constants/data';
 
 import { map } from 'lodash';
 import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar';

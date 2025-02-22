@@ -11,7 +11,6 @@ import {
   AlertDialogHeader,
   AlertDialogTitle
 } from '@/components/ui/alert-dialog';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   Target,
   TrendingUp,
@@ -20,7 +19,6 @@ import {
 } from 'lucide-react';
 
 import React from 'react';
-import { MarkdownRenderer } from './MarkdownRenderer';
 import Markdown from 'react-markdown';
 
 const priorityIcons = {
@@ -30,9 +28,22 @@ const priorityIcons = {
   'Financial Summary': ChartNoAxesCombined
 };
 
-export function Priorities(props: any) {
+interface PrioritiesProps {
+  title: keyof typeof priorityIcons;
+  accountSummary: {
+    name: string;
+    accountURL: string;
+  };
+  identifiedOpportunities?: string;
+}
+
+export function Priorities({
+  title,
+  accountSummary,
+  identifiedOpportunities
+}: PrioritiesProps) {
   const [open, setOpen] = React.useState(false);
-  const Icon = priorityIcons[props.title];
+  const Icon = priorityIcons[title];
   // console.log('accountSummary', accountSummary.accountSummary.logoURL);
   return (
     <div className='transition-all duration-200 hover:-translate-y-1'>
@@ -44,9 +55,7 @@ export function Priorities(props: any) {
           className='justify-left flex h-[calc(100%-40px)] flex-1 cursor-pointer items-center'
           onClick={() => setOpen(true)}
         >
-          <p className='text-primary-800 md:text-lg lg:text-2xl'>
-            {props.title}
-          </p>
+          <p className='text-primary-800 md:text-lg lg:text-2xl'>{title}</p>
         </CardContent>
       </Card>
       <AlertDialog open={open} onOpenChange={setOpen}>
@@ -54,11 +63,8 @@ export function Priorities(props: any) {
           <AlertDialogHeader>
             <AlertDialogTitle>
               <div>
-                <a
-                  href={props.accountSummary.accountURL}
-                  rel='noopener noreferrer'
-                >
-                  {props.accountSummary.name}
+                <a href={accountSummary.accountURL} rel='noopener noreferrer'>
+                  {accountSummary.name}
                 </a>
               </div>
             </AlertDialogTitle>
@@ -66,7 +72,7 @@ export function Priorities(props: any) {
           </AlertDialogHeader>
           <div className='flex-1 overflow-y-auto'>
             <Markdown className='prose prose-sm prose-slate mt-8 max-w-none prose-headings:font-bold prose-h2:text-2xl prose-h3:text-xl prose-h4:text-lg prose-p:text-base prose-a:text-blue-600 hover:prose-a:text-blue-500 prose-strong:text-black prose-ul:list-disc prose-li:marker:text-gray-400 dark:prose-strong:text-white'>
-              {props.identifiedOpportunities}
+              {identifiedOpportunities}
             </Markdown>
           </div>
 

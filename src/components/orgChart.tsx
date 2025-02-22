@@ -9,7 +9,7 @@ interface OrgChartProps {
   data: Employee[];
 }
 
-export function OrgChart({ data }: OrgChartProps) {
+export const OrgChart = ({ data }: OrgChartProps) => {
   const [expandedNodes, setExpandedNodes] = useState<Set<string>>(new Set());
 
   const toggleNode = (id: string) => {
@@ -83,4 +83,6 @@ export function OrgChart({ data }: OrgChartProps) {
       )}
     </div>
   );
-}
+};
+
+export default OrgChart;

@@ -1,29 +1,8 @@
 import PageContainer from '@/components/layout/page-container';
-import { buttonVariants } from '@/components/ui/button';
-import { Heading } from '@/components/ui/heading';
-import { Separator } from '@/components/ui/separator';
-import { DataTableSkeleton } from '@/components/ui/table/data-table-skeleton';
 import { searchParamsCache, serialize } from '@/lib/searchparams';
-import { cn } from '@/lib/utils';
-import { Plus } from 'lucide-react';
-import Link from 'next/link';
 import { SearchParams } from 'nuqs/server';
-import { Suspense } from 'react';
-import ProductListingPage from '@/features/products/components/product-listing';
-import ProductTableAction from '@/features/products/components/product-tables/product-table-action';
 
 import { getGlobal } from 'globals';
-import MyOrgChart, {
-  OrgChart,
-  OrgChartStructureNode
-} from '../../../components/orgChart';
-import {
-  ResizableHandle,
-  ResizablePanel,
-  ResizablePanelGroup
-} from '@/components/ui/resizable';
-import AccountSummaryCard from '@/components/AccountSummaryCard';
-import CardLayout from '@/components/CardLayout';
 
 export const metadata = {
   title: 'Dashboard: Accounts'

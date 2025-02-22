@@ -20,7 +20,7 @@ interface TrendProps {
   data: any; // Assigning any type to data
 }
 
-export function PeopleTrend({ data }: React.FC<TrendProps>) {
+export function PeopleTrend({ data }: TrendProps) {
   return (
     <div>
       {map(data, (movement, index) => (

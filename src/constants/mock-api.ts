@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 ////////////////////////////////////////////////////////////////////////////////
 // 🛑 Nothing in here has anything to do with Nextjs, it's just a fake database
 ////////////////////////////////////////////////////////////////////////////////
@@ -305,8 +307,9 @@ export function getTrends(user, accounts, from, to) {
     account_id: 'abcd2',
     news: [
       {
-        title: 'Virgin Media Reports Strong Quarterly Earnings',
-        body: 'In its latest earnings report, Virgin Media beat market expectations with robust revenue growth driven by new customer acquisitions and service expansions.',
+        title:
+          'Virgin Media O2 reveals how Capex strategy improved customer experience',
+        body: 'Virgin Media O2 has made significant progress in its network evolution, achieving a record footprint expansion in 2024 by adding.',
         date: '2025-02-20 00:00:00.000'
       },
       {

@@ -20,10 +20,7 @@ import {
 } from '@/components/ui/select';
 
 import { getGlobal } from 'globals';
-import MyOrgChart, {
-  OrgChart,
-  OrgChartStructureNode
-} from '../../../components/orgChart';
+import { OrgChart } from '../../../components/orgChart';
 import {
   ResizableHandle,
   ResizablePanel,
@@ -70,9 +67,7 @@ export default async function Page(props: pageProps) {
           fallback={<DataTableSkeleton columnCount={5} rowCount={10} />}
         >
           <div className='h-full overflow-y-auto'>
-            <OrgChart
-              data={GLOBAL_OBJECT.orgChart as OrgChartStructureNode[]}
-            />
+            <OrgChart data={GLOBAL_OBJECT.orgChart} />
           </div>
         </Suspense>
       </ResizablePanel>

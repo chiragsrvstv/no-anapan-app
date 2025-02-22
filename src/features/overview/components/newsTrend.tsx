@@ -16,11 +16,15 @@ dayjs.extend(relativeTime);
 import { Tabs, TabsList, TabsContent, TabsTrigger } from '@/components/ui/tabs';
 import { map } from 'lodash';
 
-interface TrendProps {
-  data: any; // Assigning any type to data
+interface NewsTrendProps {
+  data: Array<{
+    title: string;
+    body: string;
+    date: string;
+  }>;
 }
 
-export function NewsTrend({ data }: React.FC<TrendProps>) {
+export const NewsTrend: React.FC<NewsTrendProps> = ({ data }) => {
   return (
     <div>
       {map(data, (news, index) => (
@@ -43,4 +47,4 @@ export function NewsTrend({ data }: React.FC<TrendProps>) {
       ))}{' '}
     </div>
   );
-}
+};

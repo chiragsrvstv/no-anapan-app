@@ -26,7 +26,7 @@ interface TrendsProps {
   data: any; // Assigning any type to data
 }
 
-export function Trends({ data }: React.FC<TrendsProps>) {
+export function Trends({ data }: TrendsProps) {
   return (
     <div className='max-w-full rounded-xl bg-secondary/25'>
       <Tabs defaultValue='peopleMovements' className=''>
