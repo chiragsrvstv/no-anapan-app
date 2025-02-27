@@ -11,9 +11,16 @@ interface OrgChartProps {
 }
 
 export const OrgChart = ({ account }: OrgChartProps) => {
-  const [expandedNodes, setExpandedNodes] = useState<Set<string>>(new Set());
-
   const data = getAccountOrgChart(account.id);
+
+  // Initialize with root nodes expanded
+  const [expandedNodes, setExpandedNodes] = useState<Set<string>>(() => {
+    const roots = data.filter(
+      (employee) =>
+        employee.section === 'orgChart' && employee.parentId === null
+    );
+    return new Set(roots.map((root) => root.id));
+  });
 
   const toggleNode = (id: string) => {
     setExpandedNodes((prev) => {
