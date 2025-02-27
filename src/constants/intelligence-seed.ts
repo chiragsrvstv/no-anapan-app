@@ -10,7 +10,7 @@ export const intelligence = [
           date: dayjs().subtract(1, 'day').toISOString(),
           title: 'AI-Powered Customer Analytics and Engagement',
           url: 'https://www.ispreview.co.uk/index.php/2025/02/uk-isp-virgin-media-suffers-broadband-outage-after-routing-issue.html',
-          preview: '[20 open positions], [New VP of Customer Service]',
+          preview: '20 open positions | New VP of Customer Service',
           body: `### **Problem Statement: Declining Mobile & Fixed-Line Growth, Customer Churn**
 
 - Virgin Media O2’s **mobile contract base declined by 118,400 in Q2 and 15,300 in Q3 2024**, reflecting challenges in customer retention.
@@ -51,7 +51,7 @@ Happiest Minds has a **strong practice in AI-driven customer analytics**, levera
         {
           date: dayjs().subtract(2, 'day').toISOString(),
           title: `AI and Automation for IT Cost Optimization`,
-          preview: `[22 open roles], [Available Budget]`,
+          preview: `22 open roles | Available Budget`,
           url: `https://workplacejournal.co.uk/2025/02/virgin-media-o2-launches-employee-learning-programme-to-build-ai-expertise/`,
           body: `
      
@@ -98,7 +98,7 @@ Happiest Minds specializes in **AI-driven IT operations (AIOps) and RPA**, offer
         {
           date: dayjs().subtract(20, 'day').toISOString(),
           title: `AI-Driven Cybersecurity and Zero Trust Network Access`,
-          preview: `[12 open roles],[Strong industry tailwinds]`,
+          preview: `12 open roles | Strong industry tailwinds`,
           body: `
 ### **Problem statement: Expanding Network and Growing Cybersecurity Risks**
 
@@ -393,7 +393,7 @@ Would you like a customized outreach proposal for Google’s decision-makers?
         {
           date: dayjs().subtract(15, 'day').toISOString(),
           title: `‘Digital Modernization of Waste Collection & Fleet Management`,
-          preview: `[Competitor movement],[Strong Industry Tailwind]`,
+          preview: `Competitor movement | Strong Industry Tailwind`,
           body: `### **1. Trend at Waste Management (WM):**
 
 - WM is investing $3B between 2022-2026 in landfill gas-to-energy (LFGTE) projects.
@@ -425,7 +425,7 @@ Would you like a customized outreach proposal for Google’s decision-makers?
         {
           date: dayjs().subtract(28, 'day').toISOString(),
           title: `Smart Recycling & Circular Economy Solutions`,
-          preview: `[Regulatory Push],[Strong Industry Tailwind]`,
+          preview: `Regulatory Push | Strong Industry Tailwind`,
           body: `### **1. Trend at Waste Management (WM):**
 
 - WM’s Recycling Processing & Sales segment grew 11.3% YoY, but profit margins remain volatile due to fluctuating commodity prices.
@@ -456,7 +456,7 @@ Would you like a customized outreach proposal for Google’s decision-makers?
         {
           date: dayjs().subtract(60, 'day').toISOString(),
           title: `Digital Customer Experience & Smart Waste Subscriptions`,
-          preview: `[30-50 open positions]`,
+          preview: `30-50 open positions`,
           body: `### **1. Trend at Waste Management (WM):**
 
 - WM has 21M+ customers, but customer churn is increasing in commercial contracts.
