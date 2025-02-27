@@ -23,7 +23,7 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
-import { Target, ArrowRight, Asterisk } from 'lucide-react';
+import { Target, ArrowRight, Asterisk, Briefcase } from 'lucide-react';
 import { useState } from 'react';
 import { map, truncate } from 'lodash';
 import Markdown from 'react-markdown';
@@ -54,7 +54,7 @@ export function Jobs({ data }: any) {
             <div className='flex items-center gap-2'>
               <Avatar className='mr-2 h-6 w-6 bg-transparent'>
                 <AvatarFallback>
-                  <Asterisk />
+                  <Briefcase />
                 </AvatarFallback>
               </Avatar>
               <CardTitle className='text-md'>{job.title}</CardTitle>
