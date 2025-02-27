@@ -24,3 +24,16 @@ export function formatBytes(
       : (sizes[i] ?? 'Bytes')
   }`;
 }
+
+export function parseAccountId(encodedId: string): {
+  numericId: number;
+  accountName: string;
+} {
+  const decoded = decodeURIComponent(encodedId);
+  const [numericId, name] = decoded.split('-');
+
+  return {
+    id: parseInt(numericId, 10),
+    name
+  };
+}

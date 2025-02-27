@@ -1,7 +1,7 @@
 import PageContainer from '@/components/layout/page-container';
 import { searchParamsCache, serialize } from '@/lib/searchparams';
 
-import { getGlobal } from 'globals';
+import { getGlobal } from '../../../../globals';
 import Markdown from 'react-markdown';
 import data from './data.js';
 import {

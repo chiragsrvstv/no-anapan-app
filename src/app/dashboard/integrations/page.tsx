@@ -1,8 +1,9 @@
+//@ts-nocheck
 import PageContainer from '@/components/layout/page-container';
 import { searchParamsCache, serialize } from '@/lib/searchparams';
 import { SearchParams } from 'nuqs/server';
 
-import { getGlobal } from 'globals';
+import { getGlobal } from '../../../../globals';
 
 export const metadata = {
   title: 'Dashboard: Accounts'

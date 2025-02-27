@@ -11,10 +11,10 @@ type BreadcrumbItem = {
 // This allows to add custom title as well
 const routeMapping: Record<string, BreadcrumbItem[]> = {
   '/dashboard': [{ title: 'Dashboard', link: '/dashboard' }],
-  '/dashboard/employee': [
-    { title: 'Dashboard', link: '/dashboard' },
-    { title: 'Employee', link: '/dashboard/employee' }
-  ],
+  // '/dashboard/accounts': [
+  //   { title: 'Dashboard', link: '/dashboard' },
+  //   { title: 'Accounts', link: '/dashboard/accounts' },
+  // ],
   '/dashboard/product': [
     { title: 'Dashboard', link: '/dashboard' },
     { title: 'Product', link: '/dashboard/product' }
@@ -35,8 +35,19 @@ export function useBreadcrumbs() {
     const segments = pathname.split('/').filter(Boolean);
     return segments.map((segment, index) => {
       const path = `/${segments.slice(0, index + 1).join('/')}`;
+
+      // Extract name from id-name format in accounts path
+      let title = segment;
+      if (
+        segments[0] === 'dashboard' &&
+        segments[1] === 'accounts' &&
+        index === 2
+      ) {
+        title = decodeURIComponent(segment.split('-')[1] || segment);
+      }
+
       return {
-        title: segment.charAt(0).toUpperCase() + segment.slice(1),
+        title: title.charAt(0).toUpperCase() + title.slice(1),
         link: path
       };
     });

@@ -30,8 +30,8 @@ export const navItems: NavItem[] = [
   //   items: [] // No child items
   // },
   {
-    title: 'Dashboard',
-    url: '/dashboard/feed', // Placeholder as there is no direct link for the parent
+    title: 'Home',
+    url: '/dashboard/home', // Placeholder as there is no direct link for the parent
     icon: 'dashboard',
     isActive: true,
     shortcut: ['d', 'f'],
@@ -41,6 +41,7 @@ export const navItems: NavItem[] = [
     title: 'Tracked Accounts',
     url: '/dashboard/accounts', // Placeholder as there is no direct link for the parent
     icon: 'accounts',
+    shortcut: ['a', 'a'],
     isActive: true,
 
     items: [

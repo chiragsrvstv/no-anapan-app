@@ -1,6 +1,6 @@
 {
   "name": "not-anapanai",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "author": {
     "name": "Kiran",
@@ -10,7 +10,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "deploy":"next build;tar -cvzf ./build-zips/dist_$npm_package_version.tgz .next; scp ./build-zips/dist_$npm_package_version.tgz midsummer-production:~/applications/ai.trymidsummer.com;",
+    "deploy":"next build; tar -cvzf ./build-zips/dist_$npm_package_version.tgz .next; scp ./build-zips/dist_$npm_package_version.tgz midsummer-production:~/applications/ai.trymidsummer.com;",
     "lint": "next lint",
     "lint:fix": "eslint src --fix && npm format",
     "lint:strict": "eslint --max-warnings=0 src",

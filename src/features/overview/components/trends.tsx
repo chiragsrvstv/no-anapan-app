@@ -38,8 +38,7 @@ export function Trends({ data }: TrendsProps) {
               </TabsTrigger>
               <TabsTrigger value='news'> Latest Events </TabsTrigger>
               <TabsTrigger disabled value='conferenceTracking'>
-                {' '}
-                Conference Tracking (Coming Soon){' '}
+                Conference Tracking (Coming Soon)
               </TabsTrigger>
             </TabsList>
           </CardTitle>

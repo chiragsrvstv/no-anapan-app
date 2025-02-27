@@ -24,10 +24,10 @@ export function PeopleTrend({ data }: TrendProps) {
   return (
     <div>
       {map(data, (movement, index) => (
-        <Card key={index} className='mb-4'>
+        <Card key={movement.name} className='mb-4'>
           <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
             <div className='flex items-center'>
-              <Avatar className='mr-2 h-6 w-6'>
+              <Avatar className='mr-2 h-8 w-8'>
                 <AvatarImage src={movement.current_company_logo} />
                 <AvatarFallback>{movement.name}</AvatarFallback>
               </Avatar>

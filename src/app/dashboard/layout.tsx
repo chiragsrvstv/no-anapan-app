@@ -1,3 +1,4 @@
+//@ts-nocheck
 import KBar from '@/components/kbar';
 import AppSidebar from '@/components/layout/app-sidebar';
 import Header from '@/components/layout/header';
@@ -6,11 +7,11 @@ import type { Metadata } from 'next';
 import { cookies } from 'next/headers';
 
 export const metadata: Metadata = {
-  title: 'Next Shadcn Dashboard Starter',
-  description: 'Basic dashboard with Next.js and Shadcn'
+  title: 'ANAPAN AI',
+  description: 'ANAPAN AI - Sales Intelligence Platform'
 };
 
-export default async function DashboardLayout({
+export default async function RootLayout({
   children
 }: {
   children: React.ReactNode;

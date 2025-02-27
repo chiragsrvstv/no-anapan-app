@@ -8,6 +8,16 @@ declare module 'react-orgchart' {
     zoom?: boolean;
   }
 
+  export interface Employee {
+    id: string;
+    parentId: string | null;
+    section: 'board' | 'orgChart' | string;
+    order: number;
+    title?: string;
+    node?: any;
+    containingNodeId?: null;
+  }
+
   const OrgChart: FC<OrgChartProps>;
   export default OrgChart;
 }

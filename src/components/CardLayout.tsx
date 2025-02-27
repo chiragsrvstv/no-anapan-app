@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 // import { getAccountTrends } from '@/constants/mock-api';
 import { getAccountTrends } from '@/constants/mock-api';
 import { AccountSummaryCard } from './AccountSummaryCard';
-import { Priorities } from './Priorities';
+import { Priorities } from './PrioritiesOld';
 import AccountSum from './AccountSum';
 
 // let accountTrends;

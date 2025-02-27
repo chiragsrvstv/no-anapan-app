@@ -3,14 +3,17 @@
 import { useState } from 'react';
 
 import { EmployeeCard } from './employee-card';
-import type { Employee } from '../types';
-
+import { Employee } from 'react-orgchart';
+import { getAccountOrgChart } from '@/constants/mock-api';
 interface OrgChartProps {
-  data: Employee[];
+  // data: Employee[];
+  account: { id: number; name: string };
 }
 
-export const OrgChart = ({ data }: OrgChartProps) => {
+export const OrgChart = ({ account }: OrgChartProps) => {
   const [expandedNodes, setExpandedNodes] = useState<Set<string>>(new Set());
+
+  const data = getAccountOrgChart(account.id);
 
   const toggleNode = (id: string) => {
     setExpandedNodes((prev) => {
