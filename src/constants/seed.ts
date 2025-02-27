@@ -4,7 +4,7 @@ export const accounts = [
     name: 'Google',
     logoURL:
       'https://lh3.googleusercontent.com/d_S5gxu_S1P6NR1gXeMthZeBzkrQMHdI5uvXrpn3nfJuXpCjlqhLQKH_hbOxTHxFhp5WugVOEcl4WDrv9rmKBDOMExhKU5KmmLFQVg',
-    intelligence: { opportunities: 4, priorities: 4 },
+    intelligence: { opportunities: 4, priorities: 2 },
     insights: {
       events: 2,
       news: 6,
@@ -34,7 +34,7 @@ export const accounts = [
     name: 'Waste Management Inc',
     logoURL:
       'https://www.wm.com/content/dam/wm/assets/op/brand/wm-logo-color-600x400.jpg',
-    intelligence: { opportunities: 0, priorities: 6 },
+    intelligence: { opportunities: 0, priorities: 4 },
     insights: {
       events: 4,
       news: 6,
@@ -283,7 +283,7 @@ export const insights = [
             'https://lh3.googleusercontent.com/d_S5gxu_S1P6NR1gXeMthZeBzkrQMHdI5uvXrpn3nfJuXpCjlqhLQKH_hbOxTHxFhp5WugVOEcl4WDrv9rmKBDOMExhKU5KmmLFQVg',
           current_company_logo:
             'https://lh3.googleusercontent.com/d_S5gxu_S1P6NR1gXeMthZeBzkrQMHdI5uvXrpn3nfJuXpCjlqhLQKH_hbOxTHxFhp5WugVOEcl4WDrv9rmKBDOMExhKU5KmmLFQVg',
-          date: '2026-02-15 14:20:00.000',
+          date: '2025-02-22 14:20:00.000',
           type: 'joined'
         },
         {
@@ -296,7 +296,7 @@ export const insights = [
           current_company_logo:
             'https://lh3.googleusercontent.com/d_S5gxu_S1P6NR1gXeMthZeBzkrQMHdI5uvXrpn3nfJuXpCjlqhLQKH_hbOxTHxFhp5WugVOEcl4WDrv9rmKBDOMExhKU5KmmLFQVg',
           social_url: 'https://www.linkedin.com/in/francisdesouza',
-          date: '2025-01-01 18:32:45.301',
+          date: '2025-02-07 18:32:45.301',
           type: 'joined'
         },
         {
@@ -309,7 +309,7 @@ export const insights = [
           current_company_logo:
             'https://lh3.googleusercontent.com/d_S5gxu_S1P6NR1gXeMthZeBzkrQMHdI5uvXrpn3nfJuXpCjlqhLQKH_hbOxTHxFhp5WugVOEcl4WDrv9rmKBDOMExhKU5KmmLFQVg',
           social_url: 'https://linkedin.com/in/hayetegallot',
-          date: '2025-01-12 09:45:00.000',
+          date: '2025-02-12 09:45:00.000',
           type: 'joined'
         },
         {
@@ -322,7 +322,7 @@ export const insights = [
           current_company_logo:
             'https://lh3.googleusercontent.com/d_S5gxu_S1P6NR1gXeMthZeBzkrQMHdI5uvXrpn3nfJuXpCjlqhLQKH_hbOxTHxFhp5WugVOEcl4WDrv9rmKBDOMExhKU5KmmLFQVg',
           social_url: 'https://linkedin.com/in/matt-renner',
-          date: '2025-01-12 09:45:00.000',
+          date: '2025-02-12 09:45:00.000',
           type: 'joined'
         },
         {
@@ -397,21 +397,20 @@ export const insights = [
         {
           title: `Push for expanding in-house Silicon development`,
           body: `
-       Tensor G3 was designed in collaboration with Samsung’s 4nm process, and the upcoming G4 and G5 chips are expected to use TSMC’s advanced nodes for higher efficiency.
-       
-       - AI-powered Pixel features require low-latency AI inference, which increases the need for chip-level optimisations, thermal management, and RF efficiency improvements.
-       
-       - Google’s Pixel sales reached 10 million units in 2023, with expectations of further growth as AI adoption increases. However, hardware testing and RF validation remain bottlenecks in accelerating Pixel’s go-to-market timeline.
+Tensor G3 was designed in collaboration with Samsung’s 4nm process, and the upcoming G4 and G5 chips are expected to use TSMC’s advanced nodes for higher efficiency.
+
+- AI-powered Pixel features require low-latency AI inference, which increases the need for chip-level optimisations, thermal management, and RF efficiency improvements.
+- Google’s Pixel sales reached 10 million units in 2023, with expectations of further growth as AI adoption increases. However, hardware testing and RF validation remain bottlenecks in accelerating Pixel’s go-to-market timeline.
        `
         },
         {
           title: `ChromeOS push into enterprise markets`,
           body: `
-       Google is pushing ChromeOS deeper into enterprise markets, with increased emphasis on AI-powered security, performance efficiency, and regulatory compliance.
-       
-       - ChromeOS enterprise adoption grew by 25% in 2024, driven by its low-maintenance cloud-first model and built-in security features.
-       - Regulatory compliance (ISO 27001, NIST, ASPICE) is becoming a key concern, as Google positions ChromeOS as a secure alternative to Windows and macOS for enterprise use.
-       - Google is integrating AI-powered security solutions into ChromeOS, leveraging Gemini AI for endpoint security, data protection, and malware prevention.
+Google is pushing ChromeOS deeper into enterprise markets, with increased emphasis on AI-powered security, performance efficiency, and regulatory compliance.
+
+- ChromeOS enterprise adoption grew by 25% in 2024, driven by its low-maintenance cloud-first model and built-in security features.
+- Regulatory compliance (ISO 27001, NIST, ASPICE) is becoming a key concern, as Google positions ChromeOS as a secure alternative to Windows and macOS for enterprise use.
+- Google is integrating AI-powered security solutions into ChromeOS, leveraging Gemini AI for endpoint security, data protection, and malware prevention.
        `
         }
       ]
@@ -496,44 +495,42 @@ export const insights = [
       priorities: [
         {
           title: `Addressing labour challenges and rising fleet maintenance costs`,
-          body: `
-     WM's operating expenses grew by 7.4% YoY, mainly due to rising fuel and labor costs.
-     35% of WM’s workforce is nearing retirement age, creating a labor shortage challenge.
-     Fleet maintenance costs have increased by 9.3%, impacting profit margins.
-     
-     Labour shortages are leading to additional expenses in “overtime” costs.
-     
-     Waste Management is looking to make route planning more efficient through technology, to aid margin losses due to an old workforce and fleet.`
+          body: `WM's operating expenses grew by 7.4% YoY, mainly due to rising fuel and labor costs.
+
+- 35% of WM’s workforce is nearing retirement age, creating a labor shortage challenge.
+- Fleet maintenance costs have increased by 9.3%, impacting profit margins.
+- Labor shortages are leading to additional expenses in “overtime” costs.
+- Waste Management is looking to make route planning more efficient through technology to aid margin losses due to an aging workforce and fleet.
+`
         },
         {
           title: `Extreme focus on efficiency boosts in LFGTE projects`,
           body: `
      WM is investing $3B between 2022-2026 in Landfill Gas To Energy Projects.
-     
-     Revenue from this segment grew at ~14% last year, but scalability is still a problem.
-     
-     Regulatory push from the EPA for Renewable Fuel Standards is forcing Waste Management to focus on improve Methane capture rates at these landfills.`
+
+- Revenue from this segment grew at ~14% last year, but scalability is still a problem.
+- Regulatory push from the EPA for Renewable Fuel Standards is forcing Waste Management to focus on improving methane capture rates at these landfills.
+`
         },
         {
           title: `Controlling contamination rates in the Recycling business`,
           body: `
-     The Recycling Processing & Sales segment grew ~11% last year, but rising contamination rates are the biggest threat to this growth this year.
-     
-     Fluctuating commodity prices, rising contamination rates, and regulatory push for recycled content mandates (California SB54) are posing a direct threat to growth.
-     
-     Solving this is a direct focus for Waste Management currently.
+The Recycling Processing & Sales segment grew ~11% last year, but rising contamination rates are the biggest threat to this growth this year.
+
+- Fluctuating commodity prices, rising contamination rates, and regulatory push for recycled content mandates (California SB54) are posing a direct threat to growth.
+- Solving this is a direct focus for Waste Management currently.
+
      `
         },
         {
           title: `Addressing Customer Experience & Retention challenges`,
           body: `
-     There’s rising churn in commercial contracts due to issues with Customer Service.
-     Response times have risen by 18% compared to last year.
-     
-     Billing system inefficiencies are leading to increased customer service tickets.
-     Increased customer service tickets lead to delayed response times.
-     
-     At the same time, competitors like Republic Services are experimenting with a subscription model (pay-as-you-throw) which is affecting retention.
+There’s rising churn in commercial contracts due to issues with customer service.
+
+- Response times have risen by 18% compared to last year.
+- Billing system inefficiencies are leading to increased customer service tickets.
+- Increased customer service tickets lead to delayed response times.
+- At the same time, competitors like Republic Services are experimenting with a subscription model (pay-as-you-throw), which is affecting retention.
      `
         }
       ],

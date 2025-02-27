@@ -60,9 +60,6 @@ export function Jobs({ data }: any) {
               <CardTitle className='text-md'>{job.title}</CardTitle>
             </div>
           </CardHeader>
-          <CardContent className='text-gray-600'>
-            <p>{truncateText(job.preview)}</p>
-          </CardContent>
           <CardFooter className='pb-1'>
             <Button
               variant='link'

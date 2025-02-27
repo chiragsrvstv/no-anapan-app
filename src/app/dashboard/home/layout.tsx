@@ -22,7 +22,7 @@ export default function FeedLayout({
   return (
     <PageContainer scrollable>
       <div className='flex flex-1 flex-col gap-6'>
-        <h3 className='text-lg font-bold tracking-tight'>Welcome back</h3>
+        <h3 className='text-lg font-bold tracking-tight'>Welcome, Prakhar.</h3>
 
         <div className='rounded-lg bg-muted/50 p-4'>
           {accounts_view}

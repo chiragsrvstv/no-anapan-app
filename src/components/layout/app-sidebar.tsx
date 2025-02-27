@@ -47,7 +47,7 @@ import * as React from 'react';
 import { Icons } from '../icons';
 
 export const company = {
-  name: 'Happiest Minds Technologies',
+  name: 'Demo Inc',
   logo: GalleryVerticalEnd,
   plan: 'Enterprise'
 };

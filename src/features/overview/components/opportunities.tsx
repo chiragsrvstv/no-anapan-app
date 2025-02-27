@@ -68,7 +68,7 @@ export function Opportunities({ data }: any) {
               {dayjs().to(dayjs(opportunity.date))}
             </CardDescription>
           </CardHeader>
-          <CardContent className='text-gray-600'>
+          <CardContent className='pt-2 text-gray-600'>
             <p>{truncateText(opportunity.preview)}</p>
           </CardContent>
           <CardFooter className='pb-1'>

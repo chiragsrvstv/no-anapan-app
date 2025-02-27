@@ -30,6 +30,7 @@ import { map, truncate } from 'lodash';
 dayjs.extend(relativeTime);
 
 import { Tabs, TabsList, TabsContent, TabsTrigger } from '@/components/ui/tabs';
+import Markdown from 'react-markdown';
 
 interface TrendProps {
   data: any; // Assigning any type to data
@@ -100,10 +101,10 @@ export function Priorities({ data }: React.FC<TrendProps>) {
               few days ago
             </AlertDialogDescription>
           </AlertDialogHeader>
-          <div className='flex-1 overflow-y-auto py-4'>
-            <p className='text-sm leading-relaxed text-gray-600 md:text-base'>
+          <div className='flex-1 overflow-y-auto p-4 py-4'>
+            <Markdown className='prose-h3:text-md prose prose-sm prose-slate mt-8 max-w-none prose-headings:font-bold prose-h2:text-lg prose-h4:text-lg prose-p:text-base prose-a:text-blue-600 hover:prose-a:text-blue-500 prose-strong:text-black prose-ul:list-disc prose-li:marker:text-gray-400 dark:prose-strong:text-white'>
               {selectedPriority?.body}
-            </p>
+            </Markdown>
           </div>
           <AlertDialogFooter className='flex-none'>
             <AlertDialogCancel>Close</AlertDialogCancel>

@@ -21,7 +21,8 @@ const authConfig = {
         const user = {
           id: '1',
           name: 'Prakhar',
-          email: credentials?.email as string
+          email: credentials?.email as string,
+          image: `https://media.licdn.com/dms/image/v2/D4D03AQGCfbxSPLcHOA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700019670435?e=1746057600&v=beta&t=KAF9isKEXRnTXqz2Fy45Kl1hs4PMcF_2W5rIm6LAHeI`
         };
         if (user) {
           // Any object returned will be saved in `user` property of the JWT

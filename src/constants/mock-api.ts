@@ -151,38 +151,38 @@ export function getAccountDetails(account: any) {
 
 export function getAccountDetailsSummary(account: any) {
   const acc = find(insights, { id: account.id });
-  return acc.insights?.summary;
+  return acc?.insights?.summary;
 }
 
 export function getAccountDetailsPriorities(account: any) {
   const acc = find(insights, { id: account.id });
-  return acc.insights?.priorities;
+  return acc?.insights?.priorities;
 }
 
 export function getAccountDetailsMovements(account: any) {
   const acc = find(insights, { id: account.id });
-  return acc.insights?.peopleMovements;
+  return acc?.insights?.peopleMovements;
 }
 
 export function getAccountDetailsOpportunities(account: any) {
   const acc = find(intelligence, { id: account.id });
   console.log('acc', acc);
-  return acc.intelligence?.opportunities;
+  return acc?.intelligence?.opportunities;
 }
 
 export function getAccountDetailsJobs(account: any) {
   const acc = find(insights, { id: account.id });
-  return acc.insights?.jobs;
+  return acc?.insights?.jobs;
 }
 
 export function getAccountDetailsNews(account: any) {
   const acc = find(insights, { id: account.id });
-  return acc.insights?.news;
+  return acc?.insights?.news;
 }
 
 export function getAccountOrgChart(id: number) {
   const chart = find(ORG_CHART, { id });
-  return chart.data;
+  return chart?.data;
 }
 // Initialize sample products
 fakeProducts.initialize();

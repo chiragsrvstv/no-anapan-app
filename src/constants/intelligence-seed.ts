@@ -10,7 +10,8 @@ export const intelligence = [
           date: dayjs().subtract(1, 'day').toISOString(),
           title: 'AI-Powered Customer Analytics and Engagement',
           url: 'https://www.ispreview.co.uk/index.php/2025/02/uk-isp-virgin-media-suffers-broadband-outage-after-routing-issue.html',
-          preview: '20 open positions | New VP of Customer Service',
+          preview:
+            'Strong Signal | 20-30 Open Positions | New Hire: VP of Customer Service',
           body: `### **Problem Statement: Declining Mobile & Fixed-Line Growth, Customer Churn**
 
 - Virgin Media O2’s **mobile contract base declined by 118,400 in Q2 and 15,300 in Q3 2024**, reflecting challenges in customer retention.
@@ -51,7 +52,7 @@ Happiest Minds has a **strong practice in AI-driven customer analytics**, levera
         {
           date: dayjs().subtract(2, 'day').toISOString(),
           title: `AI and Automation for IT Cost Optimization`,
-          preview: `22 open roles | Available Budget`,
+          preview: `Strong Signal | 20-30 Open Positions | Budget Availability `,
           url: `https://workplacejournal.co.uk/2025/02/virgin-media-o2-launches-employee-learning-programme-to-build-ai-expertise/`,
           body: `
      
@@ -98,7 +99,7 @@ Happiest Minds specializes in **AI-driven IT operations (AIOps) and RPA**, offer
         {
           date: dayjs().subtract(20, 'day').toISOString(),
           title: `AI-Driven Cybersecurity and Zero Trust Network Access`,
-          preview: `12 open roles | Strong industry tailwinds`,
+          preview: `10-20 Open Positions | Strong Industry Tailwind`,
           body: `
 ### **Problem statement: Expanding Network and Growing Cybersecurity Risks**
 
@@ -148,7 +149,7 @@ Happiest Minds has **deep expertise in Zero Trust Security, managed detection an
         {
           date: dayjs().subtract(2, 'day').toISOString(),
           title: `AI-Driven Hardware Validation for Google’s Tensor Chips & Pixel Devices `,
-          preview: `18 job posts | 9 senior folks required | Strong industry tailwind`,
+          preview: `Strong Signal | 10-20 Open Positions | 0-10 Open Senior Roles | Strong Industry Tailwind`,
           body: `### **Trend Spotted at Google**
 
 Google is expanding its in-house silicon development with the Tensor series, aiming for greater AI processing efficiency and differentiation from Apple and Qualcomm. The company is investing heavily in on-device AI, integrating features like Magic Editor, Best Take, and AI Overviews into Pixel devices.
@@ -201,7 +202,7 @@ Google needs third-party expertise in hardware validation to bridge this gap, cr
         {
           date: dayjs().subtract(6, 'day').toISOString(),
           title: `ChromeOS Security Compliance & AI Performance Optimisation for Enterprise Adoption`,
-          preview: `50-100 job posts | Strong industry tailwind`,
+          preview: `Strong Signal | 50-100 Open Positions | Strong Industry Tailwind`,
           body: `### **Trend Spotted at Google**
 
 Google is pushing ChromeOS deeper into enterprise markets, with increased emphasis on AI-powered security, performance efficiency, and regulatory compliance.
@@ -246,7 +247,7 @@ Apple’s macOS has a well-established security reputation, and Google must enha
         {
           date: dayjs().subtract(6, 'day').toISOString(),
           title: `AI-Driven Hardware Validation for Google’s Tensor Chips & Pixel Devices`,
-          preview: `18 job posts | 9 senior folks required | Strong industry tailwind`,
+          preview: `Strong Signal | 50-100 Open Positions | Strong Industry Tailwind`,
           body: `### **Trend Spotted at Google**
 
 Google is expanding its in-house silicon development with the Tensor series, aiming for greater AI processing efficiency and differentiation from Apple and Qualcomm. The company is investing heavily in on-device AI, integrating features like Magic Editor, Best Take, and AI Overviews into Pixel devices.
@@ -298,54 +299,9 @@ Google needs third-party expertise in hardware validation to bridge this gap, cr
      `
         },
         {
-          date: dayjs().subtract(6, 'day').toISOString(),
-          title: `ChromeOS Security Compliance & AI Performance Optimisation for Enterprise Adoption`,
-          preview: `50-100 job posts | Strong industry tailwind`,
-          body: `### **Trend Spotted at Google**
-
-Google is pushing ChromeOS deeper into enterprise markets, with increased emphasis on AI-powered security, performance efficiency, and regulatory compliance.
-
-- ChromeOS enterprise adoption grew by 25% in 2024, driven by its low-maintenance cloud-first model and built-in security features.
-- Regulatory compliance (ISO 27001, NIST, ASPICE) is becoming a key concern, as Google positions ChromeOS as a secure alternative to Windows and macOS for enterprise use.
-- Google is integrating AI-powered security solutions into ChromeOS, leveraging Gemini AI for endpoint security, data protection, and malware prevention.
-
-### **Problem Statements Developing from This Trend**
-
-1. **Security and Compliance Challenges for ChromeOS in Regulated Industries**
-    - Enterprise customers require rigorous OS security validation to meet regulatory standards, particularly in financial services, healthcare, and government sectors.
-    - Stronger penetration testing and security compliance validation are needed for widespread adoption of ChromeOS in critical industries.
-2. **AI Performance Optimization for ChromeOS and Google Workspace AI Tools**
-    - ChromeOS is integrating AI-powered automation and data processing, creating performance bottlenecks on low-power devices.
-    - Google must optimize AI inference efficiency on ChromeOS to ensure seamless enterprise adoption.
-
-### **Hiring Data Indicating a Resource Crunch**
-
-- 19% of all ChromeOS-related job postings are in security compliance, with a focus on penetration testing, OS hardening, and enterprise security.
-- Key open roles:
-    - Program Manager, Risk & Compliance (Google Cloud)
-    - Sales Specialist, Security (Google Cloud Enterprise Adoption)
-    - Software Engineer, Open Source Security
-- Hiring locations: US, Ireland, India, Poland.
-
-### **Proposed Solution**
-
-Sasken can provide comprehensive security validation and AI performance optimization services for ChromeOS.
-
-- Security and compliance testing: Conduct penetration testing, vulnerability assessments, and OS hardening validation to ensure ChromeOS meets enterprise security standards (ISO 27001, NIST, GDPR).
-- AI model optimization for ChromeOS: Optimize Gemini AI’s processing efficiency on ChromeOS, improving performance while reducing computational overhead.
-- Cloud and endpoint security enhancements: Offer end-to-end security testing for AI-powered ChromeOS enterprise features, ensuring data privacy and regulatory compliance.
-
-### **Industry Benchmarking**
-
-Microsoft is investing heavily in security validation for Windows AI PCs, ensuring compliance with enterprise and government security standards.
-
-Apple’s macOS has a well-established security reputation, and Google must enhance ChromeOS’s security validation to remain competitive.
-     `
-        },
-        {
           date: dayjs().subtract(16, 'day').toISOString(),
           title: `Enhancing AI Integration in Google Search and Advertising Platforms`,
-          preview: `Weak signals | Exploratory`,
+          preview: `Weak Signal | Exploratory`,
           body: `### **Trend Spotted at Google**
 
 - Google's Search and Ads business generated $44.3 billion in Q3 2024, up 11% year-over-year, reflecting increasing AI-driven monetization.
@@ -392,8 +348,8 @@ Would you like a customized outreach proposal for Google’s decision-makers?
       opportunities: [
         {
           date: dayjs().subtract(15, 'day').toISOString(),
-          title: `‘Digital Modernization of Waste Collection & Fleet Management`,
-          preview: `Competitor movement | Strong Industry Tailwind`,
+          title: `Digital Modernization of Waste Collection & Fleet Management`,
+          preview: `Strong Signal | Strong Industry Tailwind`,
           body: `### **1. Trend at Waste Management (WM):**
 
 - WM is investing $3B between 2022-2026 in landfill gas-to-energy (LFGTE) projects.
@@ -425,7 +381,7 @@ Would you like a customized outreach proposal for Google’s decision-makers?
         {
           date: dayjs().subtract(28, 'day').toISOString(),
           title: `Smart Recycling & Circular Economy Solutions`,
-          preview: `Regulatory Push | Strong Industry Tailwind`,
+          preview: `Strong Signal | Regulatory Push | Strong Industry Tailwind `,
           body: `### **1. Trend at Waste Management (WM):**
 
 - WM’s Recycling Processing & Sales segment grew 11.3% YoY, but profit margins remain volatile due to fluctuating commodity prices.
@@ -456,7 +412,7 @@ Would you like a customized outreach proposal for Google’s decision-makers?
         {
           date: dayjs().subtract(60, 'day').toISOString(),
           title: `Digital Customer Experience & Smart Waste Subscriptions`,
-          preview: `30-50 open positions`,
+          preview: `Strong Signal | 30-50 Open Positions`,
           body: `### **1. Trend at Waste Management (WM):**
 
 - WM has 21M+ customers, but customer churn is increasing in commercial contracts.

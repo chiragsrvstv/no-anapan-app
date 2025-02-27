@@ -70,6 +70,7 @@ import { Avatar, AvatarImage } from '@/components/ui/avatar';
 import { AvatarFallback } from '@radix-ui/react-avatar';
 import { Opportunities } from '@/features/overview/components/opportunities';
 import { Jobs } from '@/features/overview/components/jobs';
+import { notFound } from 'next/navigation';
 
 export const metadata = {
   title: 'Dashboard: Accounts'
@@ -83,19 +84,21 @@ export default async function Page(props: pageProps) {
   const searchParams = await props.searchParams;
   // Allow nested RSCs to access the search params (in a type-safe way)
   searchParamsCache.parse(searchParams);
-  const account = parseAccountId(await props.params?.id);
+  const accountId = parseAccountId(await props.params?.id);
 
   const GLOBAL_OBJECT = getGlobal();
   // console.log(GLOBAL_OBJECT);
 
+  console.log('accountId', accountId);
+
   // const insights = getInsights('mock_user', 'mock_account', 'from', 'to');
-  const accountDetails = getAccountDetails(account);
-  const summary = getAccountDetailsSummary(account);
-  const news = getAccountDetailsNews(account);
-  const peopleMovements = getAccountDetailsMovements(account);
-  const opportunities = getAccountDetailsOpportunities(account);
-  const jobs = getAccountDetailsJobs(account);
-  const priorities = getAccountDetailsPriorities(account);
+  const accountDetails = getAccountDetails(accountId);
+  const summary = getAccountDetailsSummary(accountId);
+  const news = getAccountDetailsNews(accountId);
+  const peopleMovements = getAccountDetailsMovements(accountId);
+  const opportunities = getAccountDetailsOpportunities(accountId);
+  const jobs = getAccountDetailsJobs(accountId);
+  const priorities = getAccountDetailsPriorities(accountId);
 
   console.log('accountDetails', accountDetails);
 
@@ -146,7 +149,7 @@ export default async function Page(props: pageProps) {
           <TabsContent className='' value='summary'>
             <h3 className='text-md'> About </h3>
             <p className='p-2 pl-0 text-sm text-gray-500'> {summary} </p>
-            <OrgChart account={account} />
+            <OrgChart account={accountId} />
           </TabsContent>
           <TabsContent className='' value='news'>
             <NewsTrend data={news} />
