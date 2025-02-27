@@ -21,7 +21,7 @@ export default async function AccountsView() {
     <div>
       <div className='flex justify-end'>
         <Select>
-          <SelectTrigger className='max-w-[160px] border-gray-200 text-xs'>
+          <SelectTrigger className='max-w-[160px] text-xs'>
             <SelectValue placeholder='Last 7 days' />
           </SelectTrigger>
           <SelectContent>

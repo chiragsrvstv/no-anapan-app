@@ -146,12 +146,12 @@ export default async function Page(props: pageProps) {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <TabsContent className='' value='summary'>
+          <TabsContent className='pl-2' value='summary'>
             <h3 className='text-md'> About </h3>
             <p className='p-2 pl-0 text-sm text-gray-500'> {summary} </p>
             <OrgChart account={accountId} />
           </TabsContent>
-          <TabsContent className='' value='news'>
+          <TabsContent className='bg-muted/50' value='news'>
             <NewsTrend data={news} />
           </TabsContent>
           <TabsContent value='opportunities'>

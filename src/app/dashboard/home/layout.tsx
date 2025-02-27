@@ -24,7 +24,7 @@ export default function FeedLayout({
       <div className='flex flex-1 flex-col gap-6'>
         <h3 className='text-lg font-bold tracking-tight'>Welcome, Prakhar.</h3>
 
-        <div className='rounded-lg bg-muted/50 p-4'>
+        <div className='rounded-lg p-4'>
           {accounts_view}
 
           <div className='grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1'>
