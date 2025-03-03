@@ -53,7 +53,34 @@ export const insights = [
     id: 11,
     name: 'Virgin Media',
     insights: {
-      summary: `Virgin Media is a prominent UK telecommunications company offering broadband, television, and mobile services, known for its high-speed network and quadruple-play packages.`,
+      summary: `# Virgin Media O2 – Overview  
+
+Virgin Media O2, legally known as VMED O2 UK Limited, is a leading British telecommunications company headquartered in London, England. Established on June 1, 2021, as a 50:50 joint venture between Liberty Global and Telefónica, the company resulted from the merger of Virgin Media and O2 UK. This strategic alliance combines Virgin Media's broadband and television services with O2's mobile network operations, creating a comprehensive connectivity provider in the UK.  
+
+## Key Business Units  
+
+### 1. Consumer Services  
+- **Broadband and Television:** Offers high-speed internet and a wide range of television services to residential customers.  
+- **Mobile Telephony:** Provides mobile phone services, including voice, text, and data plans, under the O2 brand.  
+
+### 2. Business Services  
+- **Virgin Media Business:** Delivers connectivity and communication solutions to businesses of all sizes, including broadband, leased lines, and cloud services.  
+- **Wholesale Services:** Supplies network services to other operators and partners, enhancing their service offerings.  
+
+### 3. Infrastructure and Network Expansion  
+- **Nexfibre:** A joint venture focused on expanding fibre-to-the-premises (FTTP) networks, aiming to cover up to 7 million homes by 2026.  
+
+## Key Stakeholders  
+
+- **Lutz Schüler** – Chief Executive Officer (CEO)  
+- **Jo Bertram** – Managing Director for Business and Wholesale  
+- **Catherine Amran** – Director of Customer  
+- **Diego Tedesco** – Commercial, Product, and Marketing Director  
+- **John C. Malone** – Chairman of Liberty Global  
+- **José María Álvarez-Pallete López** – Chief Executive of Telefónica  
+
+This leadership team, along with the backing of Liberty Global and Telefónica, positions Virgin Media O2 as a strong competitor in the UK's telecommunications industry, committed to delivering integrated and innovative services to its diverse customer base.
+`,
       news: [
         {
           title: 'February Internet Outage',
@@ -180,8 +207,8 @@ export const insights = [
       ],
       jobs: [
         {
-          title: `Top Platforms`,
-          body: `**Microsoft Azure:** Azure Operations Engineers
+          title: `Tech Stack`,
+          body: `* **Microsoft Azure:** Azure Operations Engineers
 *   **Pulumi (TypeScript):** Azure Operations Engineers
 *   **Azure DevOps:** Azure Operations Engineers
 *   **SQL:** Smart Meter Analyst, Data Visualisation Lead
@@ -239,7 +266,40 @@ export const insights = [
     id: 12,
     name: 'Google',
     insights: {
-      summary: `Google is a subsidiary of Alphabet Inc. and offers a wide range of products and services, including search, Gmail, YouTube, Android, and Google Maps, making it one of the most influential companies in the digital age.`,
+      summary: `# Google LLC – Overview  
+
+Google LLC, a subsidiary of Alphabet Inc., is a leading American multinational technology company headquartered in Mountain View, California. Founded in 1998 by Larry Page and Sergey Brin, Google has evolved from a search engine into a diversified technology conglomerate. Its mission is "to organize the world's information and make it universally accessible and useful."  
+
+## Key Business Units  
+
+### 1. Google Services  
+- **Search Engine:** Google processes billions of queries daily, maintaining a dominant market share in online search.  
+- **Advertising:** Through platforms like Google Ads and AdSense, Google generates substantial revenue by offering targeted advertising solutions.  
+- **YouTube:** Acquired in 2006, YouTube is a leading video-sharing platform with over 2.5 billion monthly users.  
+- **Gmail:** A widely used email service offering substantial storage and integration with other Google services.  
+- **Google Maps:** Provides comprehensive mapping and navigation services globally.  
+
+### 2. Google Cloud  
+- **Cloud Computing Services:** Offers infrastructure and platform services, including data storage, machine learning, and analytics tools.  
+- **Revenue Growth:** In Q4 2024, Google Cloud's revenue grew by 30% to $12 billion.  
+
+### 3. Android Operating System  
+- **Mobile OS:** Android powers a significant portion of the world's smartphones and tablets, offering an open-source platform for developers and manufacturers.  
+
+### 4. Hardware Products  
+- **Pixel Devices:** Includes smartphones, tablets, and laptops designed and marketed by Google.  
+- **Nest Products:** A line of smart home devices, including thermostats, cameras, and speakers.  
+
+## Key Stakeholders  
+
+- **Sundar Pichai** – Chief Executive Officer (CEO) of Google and Alphabet  
+- **Ruth Porat** – President and Chief Investment Officer, former CFO  
+- **Thomas Kurian** – CEO of Google Cloud  
+- **Prabhakar Raghavan** – Senior Vice President, in charge of Google Search  
+- **Rick Osterloh** – Senior Vice President of Devices and Services  
+
+Google continues to lead in search, cloud computing, AI, and hardware, maintaining its influence as one of the most valuable and innovative technology companies in the world.      
+      `,
       news: [
         {
           title: 'Restructuring in India',
@@ -341,8 +401,8 @@ export const insights = [
       ],
       jobs: [
         {
-          title: `Top Platforms`,
-          body: `**Microsoft Azure:** Azure Operations Engineers
+          title: `Tech Stack`,
+          body: `* **Microsoft Azure:** Azure Operations Engineers
 *   **Pulumi (TypeScript):** Azure Operations Engineers
 *   **Azure DevOps:** Azure Operations Engineers
 *   **SQL:** Smart Meter Analyst, Data Visualisation Lead
@@ -420,7 +480,38 @@ Google is pushing ChromeOS deeper into enterprise markets, with increased emphas
     id: 13,
     name: 'Waste Management Inc',
     insights: {
-      summary: `Waste Management Inc. is North America's largest waste services company, headquartered in Houston, Texas, offering comprehensive waste collection, recycling, and landfill management services to over 20 million residential and 5 million commercial customers.`,
+      summary: `# Waste Management, Inc. (WM) – Overview  
+
+Waste Management, Inc. (WM) is North America's leading provider of comprehensive waste management and environmental services. Founded in 1968 and headquartered in Houston, Texas, WM serves over 20 million residential, commercial, industrial, and municipal customers across the United States and Canada. The company's extensive operations include waste collection, transfer stations, recycling facilities, and landfill management.  
+
+## Key Business Units  
+
+### 1. Collection Services  
+- **Residential, Commercial, and Industrial Collection:** Offers waste and recycling pickup services tailored to various customer needs, utilizing a fleet of over 25,000 collection and transfer vehicles.  
+
+### 2. Landfill Operations  
+- **Waste Disposal:** Operates 286 active landfill sites, ensuring safe and efficient disposal of non-hazardous waste while adhering to strict environmental standards.  
+
+### 3. Transfer Stations  
+- **Waste Consolidation:** With 381 transfer stations, WM consolidates waste from collection vehicles for efficient transport to disposal sites, optimizing logistics and reducing operational costs.  
+
+### 4. Recycling Services  
+- **Material Recovery:** Operates 119 recycling facilities, processing materials such as paper, plastics, glass, and metals, making WM a leading recycler of post-consumer materials in North America.  
+
+### 5. Renewable Energy  
+- **Landfill Gas-to-Energy Projects:** Develops and operates landfill gas-to-energy facilities, converting methane from waste decomposition into renewable energy sources.  
+
+## Key Stakeholders  
+
+- **James C. Fish Jr.** – President & Chief Executive Officer (CEO)  
+- **Devina Rankin** – Executive Vice President & Chief Financial Officer (CFO)  
+- **John Morris** – Chief Operating Officer (COO)  
+- **Edward E. H. Oneal** – Senior Vice President & Chief Digital Officer  
+- **Tara Hemmer** – Chief Sustainability Officer  
+
+WM continues to invest in sustainable waste solutions, including advancing recycling technology, reducing greenhouse gas emissions, and expanding renewable energy projects. Its focus on environmental responsibility and innovation positions the company as a leader in the waste management industry.
+      
+      `,
       news: [
         {
           title: 'Shares at a new 52-week high',
@@ -536,8 +627,8 @@ There’s rising churn in commercial contracts due to issues with customer servi
       ],
       jobs: [
         {
-          title: `Top Platforms`,
-          body: `**Microsoft Azure:** Azure Operations Engineers
+          title: `Tech Stack`,
+          body: `* **Microsoft Azure:** Azure Operations Engineers
 *   **Pulumi (TypeScript):** Azure Operations Engineers
 *   **Azure DevOps:** Azure Operations Engineers
 *   **SQL:** Smart Meter Analyst, Data Visualisation Lead

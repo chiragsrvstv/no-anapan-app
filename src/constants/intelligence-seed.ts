@@ -200,7 +200,7 @@ Samsung and Qualcomm have extensive RF validation networks, which enhance their 
 Google needs third-party expertise in hardware validation to bridge this gap, creating a clear opportunity for Sasken to provide specialized ASIC verification and RF testing services.`
         },
         {
-          date: dayjs().subtract(6, 'day').toISOString(),
+          date: dayjs().subtract(3, 'day').toISOString(),
           title: `ChromeOS Security Compliance & AI Performance Optimisation for Enterprise Adoption`,
           preview: `Strong Signal | 50-100 Open Positions | Strong Industry Tailwind`,
           body: `### **Trend Spotted at Google**
@@ -245,7 +245,7 @@ Apple’s macOS has a well-established security reputation, and Google must enha
      `
         },
         {
-          date: dayjs().subtract(6, 'day').toISOString(),
+          date: dayjs().subtract(4, 'day').toISOString(),
           title: `AI-Driven Hardware Validation for Google’s Tensor Chips & Pixel Devices`,
           preview: `Strong Signal | 50-100 Open Positions | Strong Industry Tailwind`,
           body: `### **Trend Spotted at Google**
@@ -299,7 +299,7 @@ Google needs third-party expertise in hardware validation to bridge this gap, cr
      `
         },
         {
-          date: dayjs().subtract(16, 'day').toISOString(),
+          date: dayjs().subtract(6, 'day').toISOString(),
           title: `Enhancing AI Integration in Google Search and Advertising Platforms`,
           preview: `Weak Signal | Exploratory`,
           body: `### **Trend Spotted at Google**
