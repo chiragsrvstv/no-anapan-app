@@ -26,7 +26,7 @@ import { Heading } from '@/components/ui/heading';
 import { Separator } from '@/components/ui/separator';
 import { DataTableSkeleton } from '@/components/ui/table/data-table-skeleton';
 import { searchParamsCache, serialize } from '@/lib/searchparams';
-import { cn, parseAccountId } from '@/lib/utils';
+import { cn, markdownToText, parseAccountId } from '@/lib/utils';
 import { Plus } from 'lucide-react';
 import Link from 'next/link';
 import { SearchParams } from 'nuqs/server';
@@ -71,7 +71,8 @@ import { AvatarFallback } from '@radix-ui/react-avatar';
 import { Opportunities } from '@/features/overview/components/opportunities';
 import { Jobs } from '@/features/overview/components/jobs';
 import { notFound } from 'next/navigation';
-
+import { ReadMore } from '@/components/ReadMore';
+import { truncateText } from '@/lib/utils';
 export const metadata = {
   title: 'Dashboard: Accounts'
 };
@@ -148,14 +149,17 @@ export default async function Page(props: pageProps) {
         <CardContent>
           <TabsContent className='pl-2' value='summary'>
             <h3 className='text-md'> About </h3>
-            <p className='p-2 pl-0 text-sm text-gray-500'> {summary} </p>
+            <p className='p-2 pl-0 text-sm text-gray-500'>
+              {' '}
+              {truncateText(markdownToText(summary))}{' '}
+            </p>
+            <ReadMore title={accountDetails?.name} body={summary} size={'lg'} />
             <OrgChart account={accountId} />
           </TabsContent>
           <TabsContent className='bg-muted/50' value='news'>
             <NewsTrend data={news} />
           </TabsContent>
           <TabsContent value='opportunities'>
-            {/* <IntelligenceCard /> */}
             <Opportunities data={opportunities} />
           </TabsContent>
           <TabsContent value='people'>
